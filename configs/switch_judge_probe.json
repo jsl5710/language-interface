@@ -1,0 +1,476 @@
+{
+ "Spanish": [
+  {
+   "id": "sp-probe-01",
+   "base": "EN",
+   "label": "intra",
+   "text": "My grandmother takes pastillas para la presión every morning with water."
+  },
+  {
+   "id": "sp-probe-02",
+   "base": "EN",
+   "label": "intra",
+   "text": "The pharmacist told us que el jarabe se debe guardar in the fridge."
+  },
+  {
+   "id": "sp-probe-03",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "La enfermera dijo que el patient debe ayunar antes de la cirugía."
+  },
+  {
+   "id": "sp-probe-04",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "Mi hermana tiene diabetes y necesita chequear su blood sugar todos los días."
+  },
+  {
+   "id": "sp-probe-05",
+   "base": "EN",
+   "label": "inter",
+   "text": "My son has had a rash since Monday. Le pica mucho por la noche."
+  },
+  {
+   "id": "sp-probe-06",
+   "base": "EN",
+   "label": "inter",
+   "text": "The clinic opens at eight. Hay que sacar turno con anticipación."
+  },
+  {
+   "id": "sp-probe-07",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "Mi madre toma tres medicinas al día. She often forgets the evening dose."
+  },
+  {
+   "id": "sp-probe-08",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "El examen de sangre salió normal. The doctor wants to repeat it in a month."
+  },
+  {
+   "id": "sp-probe-09",
+   "base": "EN",
+   "label": "extra",
+   "text": "Antibiotics do not work against viruses, ¿entiendes?"
+  },
+  {
+   "id": "sp-probe-10",
+   "base": "EN",
+   "label": "extra",
+   "text": "You should rest for a few days, pues."
+  },
+  {
+   "id": "sp-probe-11",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "El jarabe se toma dos veces al día, okay?"
+  },
+  {
+   "id": "sp-probe-12",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Esta prueba no duele nada, right?"
+  },
+  {
+   "id": "sp-probe-13",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "Mira, the baby has a fever. Debe ir al hospital hoy."
+  },
+  {
+   "id": "sp-probe-14",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "Bueno, my back hurts a lot. La doctora dijo que necesito rest."
+  },
+  {
+   "id": "sp-probe-15",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Okay, mi abuelo tiene la presión alta. The nurse checks it every week."
+  },
+  {
+   "id": "sp-probe-16",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Listen, el niño tiene fiebre. He needs a doctor hoy."
+  },
+  {
+   "id": "sp-probe-17",
+   "base": "EN",
+   "label": "single_language",
+   "text": "My father has been taking this medicine for two months."
+  },
+  {
+   "id": "sp-probe-18",
+   "base": "EN",
+   "label": "single_language",
+   "text": "The vaccine is given in two doses."
+  },
+  {
+   "id": "sp-probe-19",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "Mi padre toma esta medicina desde hace dos meses."
+  },
+  {
+   "id": "sp-probe-20",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "La vacuna se aplica en dos dosis."
+  },
+  {
+   "id": "sp-probe-21",
+   "base": "EN",
+   "label": "extra",
+   "text": "Mira, the doctor wants to see you again next week."
+  },
+  {
+   "id": "sp-probe-22",
+   "base": "EN",
+   "label": "extra",
+   "text": "Pues, this medicine can cause drowsiness in some people."
+  },
+  {
+   "id": "sp-probe-23",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Listen, el médico quiere verlo otra vez la próxima semana."
+  },
+  {
+   "id": "sp-probe-24",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Well, este medicamento puede causar somnolencia en algunas personas."
+  },
+  {
+   "id": "sp-probe-25",
+   "base": "EN",
+   "label": "inter",
+   "text": "Children under five should receive the vaccine at the local clinic and bring their health card. Los padres deben esperar quince minutos después de la inyección."
+  },
+  {
+   "id": "sp-probe-26",
+   "base": "EN",
+   "label": "intra",
+   "text": "Pregnant women should avoid taking medicamentos sin receta, because some of them can harm the baby during the first trimester."
+  }
+ ],
+ "Hindi": [
+  {
+   "id": "hi-probe-01",
+   "base": "EN",
+   "label": "intra",
+   "text": "My grandmother takes दवाई for her blood pressure every morning."
+  },
+  {
+   "id": "hi-probe-02",
+   "base": "EN",
+   "label": "intra",
+   "text": "The pharmacist told us that यह syrup फ्रिज में रखना है."
+  },
+  {
+   "id": "hi-probe-03",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "नर्स ने कहा कि patient को सर्जरी से पहले खाली पेट रहना है।"
+  },
+  {
+   "id": "hi-probe-04",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "मेरी बहन को diabetes है और उसे रोज़ अपनी sugar check करनी पड़ती है।"
+  },
+  {
+   "id": "hi-probe-05",
+   "base": "EN",
+   "label": "inter",
+   "text": "My son has had a rash since Monday. रात में उसे बहुत खुजली होती है।"
+  },
+  {
+   "id": "hi-probe-06",
+   "base": "EN",
+   "label": "inter",
+   "text": "The clinic opens at eight. पहले से समय लेना ज़रूरी है।"
+  },
+  {
+   "id": "hi-probe-07",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "मेरी माँ दिन में तीन दवाइयाँ लेती हैं। She often forgets the evening dose."
+  },
+  {
+   "id": "hi-probe-08",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "खून की जाँच सामान्य आई है। The doctor wants to repeat it in a month."
+  },
+  {
+   "id": "hi-probe-09",
+   "base": "EN",
+   "label": "extra",
+   "text": "Antibiotics do not work against viruses, समझे?"
+  },
+  {
+   "id": "hi-probe-10",
+   "base": "EN",
+   "label": "extra",
+   "text": "You should rest for a few days, ना?"
+  },
+  {
+   "id": "hi-probe-11",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "यह दवाई दिन में दो बार लेनी है, okay?"
+  },
+  {
+   "id": "hi-probe-12",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "यह जाँच बिल्कुल दर्दनाक नहीं है, right?"
+  },
+  {
+   "id": "hi-probe-13",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "देखो, the baby has a fever. उसे आज अस्पताल जाना चाहिए।"
+  },
+  {
+   "id": "hi-probe-14",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "अच्छा, my back hurts a lot. डॉक्टर ने कहा कि मुझे rest करना है।"
+  },
+  {
+   "id": "hi-probe-15",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Okay, मेरे दादाजी का बीपी हाई है। The nurse checks it every week."
+  },
+  {
+   "id": "hi-probe-16",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Listen, बच्चे को बुखार है। He needs a doctor today."
+  },
+  {
+   "id": "hi-probe-17",
+   "base": "EN",
+   "label": "single_language",
+   "text": "My father has been taking this medicine for two months."
+  },
+  {
+   "id": "hi-probe-18",
+   "base": "EN",
+   "label": "single_language",
+   "text": "The vaccine is given in two doses."
+  },
+  {
+   "id": "hi-probe-19",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "मेरे पिता दो महीने से यह दवाई ले रहे हैं।"
+  },
+  {
+   "id": "hi-probe-20",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "यह टीका दो खुराकों में लगाया जाता है।"
+  },
+  {
+   "id": "hi-probe-21",
+   "base": "EN",
+   "label": "extra",
+   "text": "देखो, the doctor wants to see you again next week."
+  },
+  {
+   "id": "hi-probe-22",
+   "base": "EN",
+   "label": "extra",
+   "text": "अच्छा, this medicine can cause drowsiness in some people."
+  },
+  {
+   "id": "hi-probe-23",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Listen, डॉक्टर आपको अगले हफ़्ते फिर से देखना चाहते हैं।"
+  },
+  {
+   "id": "hi-probe-24",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Well, यह दवा कुछ लोगों में नींद ला सकती है।"
+  },
+  {
+   "id": "hi-probe-25",
+   "base": "EN",
+   "label": "inter",
+   "text": "Children under five should receive the vaccine at the local clinic and bring their health card. माता-पिता को इंजेक्शन के बाद पंद्रह मिनट इंतज़ार करना चाहिए।"
+  },
+  {
+   "id": "hi-probe-26",
+   "base": "EN",
+   "label": "intra",
+   "text": "Pregnant women should avoid taking बिना पर्ची की दवाइयाँ, because some of them can harm the baby during the first trimester."
+  }
+ ],
+ "Swahili": [
+  {
+   "id": "sw-probe-01",
+   "base": "EN",
+   "label": "intra",
+   "text": "My grandmother takes dawa ya shinikizo every morning."
+  },
+  {
+   "id": "sw-probe-02",
+   "base": "EN",
+   "label": "intra",
+   "text": "The pharmacist told us kwamba dawa hii ihifadhiwe kwenye friji."
+  },
+  {
+   "id": "sw-probe-03",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "Muuguzi alisema kuwa mgonjwa lazima afunge before the surgery."
+  },
+  {
+   "id": "sw-probe-04",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "Dada yangu ana kisukari na anapaswa kupima sugar yake kila siku."
+  },
+  {
+   "id": "sw-probe-05",
+   "base": "EN",
+   "label": "inter",
+   "text": "My son has had a rash since Monday. Anawashwa sana usiku."
+  },
+  {
+   "id": "sw-probe-06",
+   "base": "EN",
+   "label": "inter",
+   "text": "The clinic opens at eight. Ni lazima kupanga miadi mapema."
+  },
+  {
+   "id": "sw-probe-07",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "Mama yangu anatumia dawa tatu kwa siku. She often forgets the evening dose."
+  },
+  {
+   "id": "sw-probe-08",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "Kipimo cha damu kilikuwa cha kawaida. The doctor wants to repeat it in a month."
+  },
+  {
+   "id": "sw-probe-09",
+   "base": "EN",
+   "label": "extra",
+   "text": "Antibiotics do not work against viruses, unaelewa?"
+  },
+  {
+   "id": "sw-probe-10",
+   "base": "EN",
+   "label": "extra",
+   "text": "You should rest for a few days, basi."
+  },
+  {
+   "id": "sw-probe-11",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Dawa hii inatumiwa mara mbili kwa siku, okay?"
+  },
+  {
+   "id": "sw-probe-12",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Kipimo hiki hakiumi hata kidogo, right?"
+  },
+  {
+   "id": "sw-probe-13",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "Sikiliza, the baby has a fever. Anapaswa kwenda hospitali leo."
+  },
+  {
+   "id": "sw-probe-14",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "Sawa, my back hurts a lot. Daktari alisema ninahitaji rest."
+  },
+  {
+   "id": "sw-probe-15",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Okay, babu yangu ana shinikizo la juu. The nurse checks it every week."
+  },
+  {
+   "id": "sw-probe-16",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Listen, mtoto ana homa. He needs a doctor leo."
+  },
+  {
+   "id": "sw-probe-17",
+   "base": "EN",
+   "label": "single_language",
+   "text": "My father has been taking this medicine for two months."
+  },
+  {
+   "id": "sw-probe-18",
+   "base": "EN",
+   "label": "single_language",
+   "text": "The vaccine is given in two doses."
+  },
+  {
+   "id": "sw-probe-19",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "Baba yangu amekuwa akitumia dawa hii kwa miezi miwili."
+  },
+  {
+   "id": "sw-probe-20",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "Chanjo hii hutolewa kwa dozi mbili."
+  },
+  {
+   "id": "sw-probe-21",
+   "base": "EN",
+   "label": "extra",
+   "text": "Sikiliza, the doctor wants to see you again next week."
+  },
+  {
+   "id": "sw-probe-22",
+   "base": "EN",
+   "label": "extra",
+   "text": "Basi, this medicine can cause drowsiness in some people."
+  },
+  {
+   "id": "sw-probe-23",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Listen, daktari anataka kukuona tena wiki ijayo."
+  },
+  {
+   "id": "sw-probe-24",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Well, dawa hii inaweza kusababisha usingizi kwa watu wengine."
+  },
+  {
+   "id": "sw-probe-25",
+   "base": "EN",
+   "label": "inter",
+   "text": "Children under five should receive the vaccine at the local clinic and bring their health card. Wazazi wanapaswa kusubiri dakika kumi na tano baada ya sindano."
+  },
+  {
+   "id": "sw-probe-26",
+   "base": "EN",
+   "label": "intra",
+   "text": "Pregnant women should avoid taking dawa zisizohitaji agizo la daktari, because some of them can harm the baby during the first trimester."
+  }
+ ]
+}

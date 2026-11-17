@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "date_utc": "2026-11-15T09:49:52.882248+00:00",
+  "git_commit": "1c59b6eaa7138d966039c31ceab2bcb2d0c7e1f5",
+  "python": "3.12.15",
+  "platform": "Linux-4.18.0-553.184.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "seed": 13,
+  "decoding": {
+    "temperature": 0.0,
+    "max_tokens": 512,
+    "system_prompt": null
+  },
+  "uncertainty": {
+    "n_samples": 10,
+    "sample_temperature": 1.0,
+    "ece_bins": 10,
+    "selective_coverage": 0.8,
+    "overconfident_threshold": 0.8,
+    "pattern_tolerance": 0.02
+  },
+  "models": {
+    "general": [
+      {
+        "id": "google/gemma-3-27b-it",
+        "base_url": "http://localhost:8000/v1"
+      },
+      {
+        "id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+        "base_url": "http://localhost:8003/v1"
+      },
+      {
+        "id": "meta-llama/Llama-3.1-8B-Instruct",
+        "base_url": "http://localhost:8004/v1"
+      }
+    ],
+    "medical": [
+      {
+        "id": "google/medgemma-27b-text-it",
+        "base_url": "http://localhost:8001/v1"
+      },
+      {
+        "id": "epfl-llm/meditron-7b",
+        "base_url": "http://localhost:8002/v1"
+      },
+      {
+        "id": "m42-health/Llama3-Med42-8B",
+        "base_url": "http://localhost:8005/v1"
+      }
+    ]
+  },
+  "classifiers": [
+    {
+      "name": "llama_guard",
+      "base_url": "http://localhost:8010/v1",
+      "id": "meta-llama/Llama-Guard-4-12B"
+    },
+    {
+      "name": "wildguard",
+      "base_url": "http://localhost:8011/v1",
+      "id": "allenai/wildguard"
+    },
+    {
+      "name": "polyguard",
+      "base_url": "http://localhost:8012/v1",
+      "id": "ToxicityPrompts/PolyGuard-Qwen"
+    },
+    {
+      "name": "qwen3guard",
+      "base_url": "http://localhost:8013/v1",
+      "id": "Qwen/Qwen3Guard-Gen-8B"
+    }
+  ],
+  "judge": {
+    "model": "Qwen/Qwen3-32B",
+    "base_url": "http://localhost:8020/v1"
+  },
+  "renderer": {
+    "dialect": {
+      "method": "multivalue",
+      "repo": "https://github.com/SALT-NLP/multi-value",
+      "commit": "f93d0edf6fbbd332da9ec14894141593a19f2f7c",
+      "checkout": "../external/multi-value",
+      "atlas": "https://ewave-atlas.org/",
+      "dialect_map": {
+        "AAVE": "AfricanAmericanVernacular",
+        "Indian English": "IndianDialect",
+        "Nigerian English": "NigerianDialect",
+        "Jamaican English": "JamaicanDialect",
+        "White Zimbabwean English": "WhiteZimbabweanDialect"
+      }
+    },
+    "translator": {
+      "name": "nllb-200-3.3B"
+    },
+    "translation": {
+      "model": "Qwen/Qwen3-32B",
+      "base_url": "http://localhost:8030/v1"
+    },
+    "code_switch": {
+      "model": "Qwen/Qwen3-32B",
+      "base_url": "http://localhost:8030/v1"
+    },
+    "lay_rewrite": {
+      "model": "Qwen/Qwen3-32B",
+      "base_url": "http://localhost:8030/v1"
+    },
+    "similarity_model": "sentence-transformers/LaBSE",
+    "semantic_similarity_min": 0.8,
+    "max_attempts": 3
+  },
+  "stage": "06b_confusion"
+}

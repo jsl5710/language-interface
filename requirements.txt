@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+pyyaml
+openai>=1.30
+datasets
+langid
+sentence-transformers
+tqdm
+pytest
+matplotlib
+# Dialect rendering: install Multi-VALUE at a pinned commit, see docs/EXPERIMENTS.md section 3.2
+# pip install "git+https://github.com/SALT-NLP/multi-value@<COMMIT>"   (confirm the install route in its README)

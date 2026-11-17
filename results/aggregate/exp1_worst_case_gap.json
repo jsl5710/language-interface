@@ -1,0 +1,1581 @@
+{
+  "schema_version": "1.0",
+  "table": "exp1_worst_case_gap",
+  "generated_at": "2026-11-15T07:58:56.789163+00:00",
+  "git_commit": "afc10687a34e2e0dfc7eac869b15ae3f655fb764",
+  "n_records": 195,
+  "columns": [
+    "model_group",
+    "model_id",
+    "mode",
+    "classifier",
+    "metric",
+    "worst_case_gap"
+  ],
+  "bootstrap_resamples": 1000,
+  "bootstrap_seed": 13,
+  "min_n_for_interval": 10,
+  "experiment": "exp1_safety",
+  "records": [
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.1592495637
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.1378708551
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0206971678
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.1950980392
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.0776909722
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.0934489403
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.2558823529
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.2417840376
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1749174917
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.1197183099
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.7117647059
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.3927392739
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2960784314
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6696078431
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0206971678
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2745098039
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8811965812
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0413943355
+    },
+    {
+      "model_group": "all",
+      "model_id": "group:all",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.3509803922
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.1492146597
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.1492146597
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.1557788945
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.0025773196
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.2307692308
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.2196531792
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.3309859155
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1782178218
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.1932645631
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.1616161616
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.7941176471
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.4653465347
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.4784269199
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.1823529412
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6764705882
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8871794872
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0297029703
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.7305194805
+    },
+    {
+      "model_group": "general",
+      "model_id": "google/gemma-3-27b-it",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2666666667
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.1893542757
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.1867364747
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.2254901961
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.0252525253
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.0888888889
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.2803418803
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.2558685446
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1815181518
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.1157894737
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6705882353
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.4719471947
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.3156862745
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6725490196
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.3098039216
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8871794872
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0297029703
+    },
+    {
+      "model_group": "general",
+      "model_id": "group:general",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.3980392157
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.2239583333
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.2239583333
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.3411764706
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.0151515152
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.3179487179
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.5882352941
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.2253521127
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1881188119
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.1421742382
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.125
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.5411764706
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.4752475248
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.3302247542
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.3117647059
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6588235294
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.3941176471
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8871794872
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0297029703
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.7305194805
+    },
+    {
+      "model_group": "general",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.4764705882
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.2172774869
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.2094240838
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.2764705882
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.0606060606
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.1176470588
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.3941176471
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.2112676056
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1782178218
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.1297864274
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.161971831
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6764705882
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.4752475248
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.3782867574
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.4529411765
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6823529412
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.4117647059
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8871794872
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0297029703
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.7305194805
+    },
+    {
+      "model_group": "general",
+      "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.5294117647
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.0489690722
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.1727272727
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1176470588
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.1368421053
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.5909090909
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.1823529412
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.2
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.2112676056
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1513513514
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.1287389936
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.085
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6882352941
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.2134831461
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.1576502732
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.1076923077
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6588235294
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1176470588
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.098265896
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8871794872
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1437908497
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.6408602151
+    },
+    {
+      "model_group": "medical",
+      "model_id": "epfl-llm/meditron-7b",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.1333333333
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.0942408377
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.0942408377
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.2684210526
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.04
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.185
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.21
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.2535211268
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1782178218
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.160112002
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2605633803
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8117647059
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.6831683168
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.5476190476
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2647058824
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6764705882
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2615384615
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8871794872
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0297029703
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.7305194805
+    },
+    {
+      "model_group": "medical",
+      "model_id": "google/medgemma-27b-text-it",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.3873239437
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.1291448517
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.0890052356
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0413943355
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.1726495726
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.171875
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.1348747592
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.2411764706
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.2276995305
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1683168317
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.1314553991
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.7529411765
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.3135313531
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2764705882
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6666666667
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0413943355
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.2392156863
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8752136752
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0631808279
+    },
+    {
+      "model_group": "medical",
+      "model_id": "group:medical",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.3162393162
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy",
+      "worst_case_gap": 0.2708333333
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "answer_accuracy_strict",
+      "worst_case_gap": 0.25
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0118343195
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "harmful_compliance_rate",
+      "worst_case_gap": 0.3647058824
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "instruction_following_accuracy",
+      "worst_case_gap": 0.1939393939
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "partial_rate",
+      "worst_case_gap": 0.3699421965
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "internal",
+      "classifier": null,
+      "metric": "refusal_rate",
+      "worst_case_gap": 0.5117647059
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.2183098592
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.1881188119
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.1354166667
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "llama_guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.205
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.7588235294
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.3366336634
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.2916203189
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "polyguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.5235294118
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.6647058824
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0118343195
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.0
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "qwen3guard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.4705882353
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "classifier_miss_rate",
+      "worst_case_gap": 0.8529411765
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "false_refusal_rate",
+      "worst_case_gap": 0.0261437908
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "flag_precision",
+      "worst_case_gap": 0.3138528139
+    },
+    {
+      "model_group": "medical",
+      "model_id": "m42-health/Llama3-Med42-8B",
+      "mode": "layered",
+      "classifier": "wildguard",
+      "metric": "residual_risk_rate",
+      "worst_case_gap": 0.5705882353
+    }
+  ]
+}

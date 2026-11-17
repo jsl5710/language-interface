@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "table": "dialect_determinism",
+  "generated_at": "2026-10-18T23:17:21.565627+00:00",
+  "git_commit": "c408c1d06f553c745ca41482f3f5f566938da02f",
+  "n_records": 5,
+  "columns": [
+    "dialect",
+    "checked",
+    "differing",
+    "item_ids"
+  ],
+  "experiment": "both",
+  "records": [
+    {
+      "dialect": "AAVE",
+      "checked": 20,
+      "differing": 0,
+      "item_ids": []
+    },
+    {
+      "dialect": "Indian English",
+      "checked": 20,
+      "differing": 0,
+      "item_ids": []
+    },
+    {
+      "dialect": "Nigerian English",
+      "checked": 20,
+      "differing": 0,
+      "item_ids": []
+    },
+    {
+      "dialect": "Jamaican English",
+      "checked": 20,
+      "differing": 0,
+      "item_ids": []
+    },
+    {
+      "dialect": "White Zimbabwean English",
+      "checked": 20,
+      "differing": 0,
+      "item_ids": []
+    }
+  ]
+}

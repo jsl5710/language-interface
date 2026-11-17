@@ -1,0 +1,386 @@
+{
+ "Spanish": [
+  {
+   "id": "sp-shot-01",
+   "base": "EN",
+   "label": "intra",
+   "text": "The nurse explained que el paciente debe tomar la medicina twice a day.",
+   "explanation": "One sentence. It begins in English, switches to Spanish inside the sentence (que el paciente debe tomar la medicina) and returns to English (twice a day). The switch happens inside one sentence, so it is intra."
+  },
+  {
+   "id": "sp-shot-02",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "El médico dijo que la blood pressure del paciente está muy alta.",
+   "explanation": "One Spanish sentence with an English phrase (blood pressure) embedded in its grammar. The switch is inside the sentence, so it is intra."
+  },
+  {
+   "id": "sp-shot-03",
+   "base": "EN",
+   "label": "inter",
+   "text": "The patient has had a fever for three days. Necesita tomar mucho líquido y descansar.",
+   "explanation": "Two complete sentences. The first is entirely English and the second is entirely Spanish. The language changes exactly at the sentence boundary, so it is inter."
+  },
+  {
+   "id": "sp-shot-04",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "La paciente tiene tos desde hace una semana. The doctor will order a chest X-ray tomorrow.",
+   "explanation": "Two complete sentences. The first is entirely Spanish and the second is entirely English. The switch falls at the sentence boundary and nothing is mixed inside a sentence, so it is inter."
+  },
+  {
+   "id": "sp-shot-05",
+   "base": "EN",
+   "label": "extra",
+   "text": "The medication should be taken with food, ¿no?",
+   "explanation": "The sentence is entirely English except for the short tag ¿no? at the end. A tag is not a full sentence, so this is extra."
+  },
+  {
+   "id": "sp-shot-06",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "La vacuna es segura para los niños, you know?",
+   "explanation": "The sentence is entirely Spanish except for the short English tag you know? at the end. A tag, not a clause, so this is extra."
+  },
+  {
+   "id": "sp-shot-07",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "Bueno, the patient has chest pain. Necesita un ECG ahora.",
+   "explanation": "Two patterns together: a Spanish tag at the start (Bueno,) and a sentence-level switch to Spanish in the second sentence. It fits more than one type, so it is other_mixed."
+  },
+  {
+   "id": "sp-shot-08",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Okay, el paciente tiene dolor de pecho. The doctor wants an ECG today.",
+   "explanation": "Two patterns together: an English tag at the start (Okay,) and a sentence-level switch to English in the second sentence. More than one type, so it is other_mixed."
+  },
+  {
+   "id": "sp-shot-09",
+   "base": "EN",
+   "label": "single_language",
+   "text": "The patient has had chest pain since yesterday.",
+   "explanation": "The whole text is English. There is no second language, so it is single_language."
+  },
+  {
+   "id": "sp-shot-10",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "El paciente tiene dolor de pecho desde ayer.",
+   "explanation": "The whole text is Spanish. There is no English, so it is single_language."
+  },
+  {
+   "id": "sp-shot-11",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "Bueno, the doctor said que debo descansar.",
+   "explanation": "Two patterns together: a Spanish tag at the start (bueno,) and a switch inside the sentence that follows. Because it combines a tag (extra) with a switch inside a sentence (intra), it is other_mixed, not intra."
+  },
+  {
+   "id": "sp-shot-12",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Right, el doctor dijo que mi blood pressure está alta.",
+   "explanation": "Two patterns together: a English tag at the start (Right,) and a switch inside the sentence that follows. Because it combines a tag (extra) with a switch inside a sentence (intra), it is other_mixed, not intra."
+  },
+  {
+   "id": "sp-shot-13",
+   "base": "EN",
+   "label": "extra",
+   "text": "Bueno, the nurse will give you the medicine after lunch.",
+   "explanation": "A short Spanish tag at the start, followed by one sentence that is entirely in English. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "sp-shot-14",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Look, la enfermera le dará la medicina después del almuerzo.",
+   "explanation": "A short English tag at the start, followed by one sentence that is entirely in Spanish. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "sp-shot-15",
+   "base": "EN",
+   "label": "extra",
+   "text": "Pues, the hospital requires all patients to complete the consent form before the procedure and to bring a list of their current medications.",
+   "explanation": "A short Spanish tag at the start, followed by one sentence that is entirely in English. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "sp-shot-16",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Okay, el hospital exige que todos los pacientes completen el formulario de consentimiento antes del procedimiento y traigan una lista de sus medicamentos actuales.",
+   "explanation": "A short English tag at the start, followed by one sentence that is entirely in Spanish. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "sp-shot-17",
+   "base": "EN",
+   "label": "inter",
+   "text": "Patients with type 2 diabetes should check their blood sugar before each meal and keep a written record. Si el nivel es muy alto, deben llamar a su médico el mismo día.",
+   "explanation": "Two complete sentences. The first is entirely English and the second is entirely Spanish. The language changes only at the sentence boundary, and long sentences do not change that, so it is inter."
+  },
+  {
+   "id": "sp-shot-18",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "Los pacientes con hipertensión deben medir su blood pressure cada mañana y anotar los resultados antes de ir a la consulta.",
+   "explanation": "One Spanish sentence with the English phrase blood pressure embedded in its grammar. The switch is inside the sentence, so it is intra."
+  }
+ ],
+ "Hindi": [
+  {
+   "id": "hi-shot-01",
+   "base": "EN",
+   "label": "intra",
+   "text": "The nurse explained that मरीज़ को खाने के बाद दवा लेनी चाहिए.",
+   "explanation": "One sentence. It starts in English (The nurse explained that) and continues in Hindi (मरीज़ को खाने के बाद दवा लेनी चाहिए) inside the same sentence. The switch is inside the sentence, so it is intra."
+  },
+  {
+   "id": "hi-shot-02",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "डॉक्टर ने कहा कि मरीज़ का blood pressure बहुत ज़्यादा है।",
+   "explanation": "One Hindi sentence with the English phrase blood pressure embedded in its grammar. The switch is inside the sentence, so it is intra."
+  },
+  {
+   "id": "hi-shot-03",
+   "base": "EN",
+   "label": "inter",
+   "text": "The patient has had a fever for three days. उसे बहुत सारा पानी पीना चाहिए और आराम करना चाहिए।",
+   "explanation": "Two complete sentences. The first is entirely English and the second is entirely Hindi. The language changes only at the sentence boundary, so it is inter."
+  },
+  {
+   "id": "hi-shot-04",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "मरीज़ को एक हफ़्ते से खाँसी है। The doctor will order a chest X-ray tomorrow.",
+   "explanation": "Two complete sentences. The first is entirely Hindi and the second is entirely English. The switch is at the sentence boundary, so it is inter."
+  },
+  {
+   "id": "hi-shot-05",
+   "base": "EN",
+   "label": "extra",
+   "text": "The medicine should be taken with food, ठीक है?",
+   "explanation": "The sentence is entirely English except for the short Hindi tag ठीक है? at the end. A tag, not a clause, so this is extra."
+  },
+  {
+   "id": "hi-shot-06",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "यह टीका बच्चों के लिए सुरक्षित है, you know?",
+   "explanation": "The sentence is entirely Hindi except for the short English tag you know? at the end. A tag, not a clause, so this is extra."
+  },
+  {
+   "id": "hi-shot-07",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "अच्छा, the patient has chest pain. उसे आज ECG की ज़रूरत है।",
+   "explanation": "Two patterns together: a Hindi tag at the start (अच्छा,) and a sentence-level switch to Hindi in the second sentence. It fits more than one type, so it is other_mixed."
+  },
+  {
+   "id": "hi-shot-08",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Okay, मरीज़ को सीने में दर्द है। The doctor wants an ECG today.",
+   "explanation": "Two patterns together: an English tag at the start (Okay,) and a sentence-level switch to English in the second sentence. It fits more than one type, so it is other_mixed."
+  },
+  {
+   "id": "hi-shot-09",
+   "base": "EN",
+   "label": "single_language",
+   "text": "The patient has had chest pain since yesterday.",
+   "explanation": "The whole text is English. There is no Hindi, so it is single_language."
+  },
+  {
+   "id": "hi-shot-10",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "मरीज़ को कल से सीने में दर्द है।",
+   "explanation": "The whole text is Hindi. There is no English, so it is single_language."
+  },
+  {
+   "id": "hi-shot-11",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "अच्छा, the doctor said कि मुझे आराम करना चाहिए.",
+   "explanation": "Two patterns together: a Hindi tag at the start (अच्छा,) and a switch inside the sentence that follows. Because it combines a tag (extra) with a switch inside a sentence (intra), it is other_mixed, not intra."
+  },
+  {
+   "id": "hi-shot-12",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Right, डॉक्टर ने कहा कि मेरा blood pressure ज़्यादा है।",
+   "explanation": "Two patterns together: a English tag at the start (Right,) and a switch inside the sentence that follows. Because it combines a tag (extra) with a switch inside a sentence (intra), it is other_mixed, not intra."
+  },
+  {
+   "id": "hi-shot-13",
+   "base": "EN",
+   "label": "extra",
+   "text": "अच्छा, the nurse will give you the medicine after lunch.",
+   "explanation": "A short Hindi tag at the start, followed by one sentence that is entirely in English. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "hi-shot-14",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Look, नर्स आपको खाने के बाद दवा देगी।",
+   "explanation": "A short English tag at the start, followed by one sentence that is entirely in Hindi. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "hi-shot-15",
+   "base": "EN",
+   "label": "extra",
+   "text": "ठीक है, the hospital requires all patients to complete the consent form before the procedure and to bring a list of their current medications.",
+   "explanation": "A short Hindi tag at the start, followed by one sentence that is entirely in English. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "hi-shot-16",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Okay, अस्पताल की माँग है कि सभी मरीज़ प्रक्रिया से पहले सहमति पत्र भरें और अपनी वर्तमान दवाओं की सूची साथ लाएँ।",
+   "explanation": "A short English tag at the start, followed by one sentence that is entirely in Hindi. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "hi-shot-17",
+   "base": "EN",
+   "label": "inter",
+   "text": "Patients with type 2 diabetes should check their blood sugar before each meal and keep a written record. अगर स्तर बहुत ज़्यादा हो, तो उन्हें उसी दिन अपने डॉक्टर को फ़ोन करना चाहिए।",
+   "explanation": "Two complete sentences. The first is entirely English and the second is entirely Hindi. The language changes only at the sentence boundary, and long sentences do not change that, so it is inter."
+  },
+  {
+   "id": "hi-shot-18",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "उच्च रक्तचाप वाले मरीज़ों को हर सुबह अपना blood pressure मापना चाहिए और डॉक्टर के पास जाने से पहले नतीजे लिख लेने चाहिए।",
+   "explanation": "One Hindi sentence with the English phrase blood pressure embedded in its grammar. The switch is inside the sentence, so it is intra."
+  }
+ ],
+ "Swahili": [
+  {
+   "id": "sw-shot-01",
+   "base": "EN",
+   "label": "intra",
+   "text": "The nurse explained that mgonjwa anapaswa kunywa dawa baada ya kula.",
+   "explanation": "One sentence. It starts in English (The nurse explained that) and continues in Swahili (mgonjwa anapaswa kunywa dawa baada ya kula) inside the same sentence. The switch is inside the sentence, so it is intra."
+  },
+  {
+   "id": "sw-shot-02",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "Daktari alisema blood pressure ya mgonjwa iko juu sana.",
+   "explanation": "One Swahili sentence with the English phrase blood pressure embedded in its grammar. The switch is inside the sentence, so it is intra."
+  },
+  {
+   "id": "sw-shot-03",
+   "base": "EN",
+   "label": "inter",
+   "text": "The patient has had a fever for three days. Anapaswa kunywa maji mengi na kupumzika.",
+   "explanation": "Two complete sentences. The first is entirely English and the second is entirely Swahili. The language changes only at the sentence boundary, so it is inter."
+  },
+  {
+   "id": "sw-shot-04",
+   "base": "NATIVE",
+   "label": "inter",
+   "text": "Mgonjwa amekuwa na kikohozi kwa wiki moja. The doctor will order a chest X-ray tomorrow.",
+   "explanation": "Two complete sentences. The first is entirely Swahili and the second is entirely English. The switch is at the sentence boundary, so it is inter."
+  },
+  {
+   "id": "sw-shot-05",
+   "base": "EN",
+   "label": "extra",
+   "text": "The medicine should be taken with food, sivyo?",
+   "explanation": "The sentence is entirely English except for the short Swahili tag sivyo? at the end. A tag, not a clause, so this is extra."
+  },
+  {
+   "id": "sw-shot-06",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Chanjo hii ni salama kwa watoto, you know?",
+   "explanation": "The sentence is entirely Swahili except for the short English tag you know? at the end. A tag, not a clause, so this is extra."
+  },
+  {
+   "id": "sw-shot-07",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "Sawa, the patient has chest pain. Anahitaji ECG leo.",
+   "explanation": "Two patterns together: a Swahili tag at the start (Sawa,) and a sentence-level switch to Swahili in the second sentence. It fits more than one type, so it is other_mixed."
+  },
+  {
+   "id": "sw-shot-08",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Okay, mgonjwa ana maumivu ya kifua. The doctor wants an ECG today.",
+   "explanation": "Two patterns together: an English tag at the start (Okay,) and a sentence-level switch to English in the second sentence. It fits more than one type, so it is other_mixed."
+  },
+  {
+   "id": "sw-shot-09",
+   "base": "EN",
+   "label": "single_language",
+   "text": "The patient has had chest pain since yesterday.",
+   "explanation": "The whole text is English. There is no Swahili, so it is single_language."
+  },
+  {
+   "id": "sw-shot-10",
+   "base": "NATIVE",
+   "label": "single_language",
+   "text": "Mgonjwa ana maumivu ya kifua tangu jana.",
+   "explanation": "The whole text is Swahili. There is no English, so it is single_language."
+  },
+  {
+   "id": "sw-shot-11",
+   "base": "EN",
+   "label": "other_mixed",
+   "text": "Sawa, the doctor said kwamba nipumzike.",
+   "explanation": "Two patterns together: a Swahili tag at the start (Sawa,) and a switch inside the sentence that follows. Because it combines a tag (extra) with a switch inside a sentence (intra), it is other_mixed, not intra."
+  },
+  {
+   "id": "sw-shot-12",
+   "base": "NATIVE",
+   "label": "other_mixed",
+   "text": "Right, daktari alisema blood pressure yangu iko juu.",
+   "explanation": "Two patterns together: a English tag at the start (Right,) and a switch inside the sentence that follows. Because it combines a tag (extra) with a switch inside a sentence (intra), it is other_mixed, not intra."
+  },
+  {
+   "id": "sw-shot-13",
+   "base": "EN",
+   "label": "extra",
+   "text": "Basi, the nurse will give you the medicine after lunch.",
+   "explanation": "A short Swahili tag at the start, followed by one sentence that is entirely in English. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "sw-shot-14",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Look, muuguzi atakupa dawa baada ya chakula cha mchana.",
+   "explanation": "A short English tag at the start, followed by one sentence that is entirely in Swahili. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "sw-shot-15",
+   "base": "EN",
+   "label": "extra",
+   "text": "Sawa, the hospital requires all patients to complete the consent form before the procedure and to bring a list of their current medications.",
+   "explanation": "A short Swahili tag at the start, followed by one sentence that is entirely in English. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "sw-shot-16",
+   "base": "NATIVE",
+   "label": "extra",
+   "text": "Okay, hospitali inahitaji wagonjwa wote wajaze fomu ya idhini kabla ya utaratibu na walete orodha ya dawa wanazotumia sasa.",
+   "explanation": "A short English tag at the start, followed by one sentence that is entirely in Swahili. A tag attached to an otherwise single-language sentence is extra, even when the sentence that follows is long. It is not other_mixed, because there is no second switch anywhere else in the text."
+  },
+  {
+   "id": "sw-shot-17",
+   "base": "EN",
+   "label": "inter",
+   "text": "Patients with type 2 diabetes should check their blood sugar before each meal and keep a written record. Ikiwa kiwango ni cha juu sana, wanapaswa kumpigia daktari wao siku hiyo hiyo.",
+   "explanation": "Two complete sentences. The first is entirely English and the second is entirely Swahili. The language changes only at the sentence boundary, and long sentences do not change that, so it is inter."
+  },
+  {
+   "id": "sw-shot-18",
+   "base": "NATIVE",
+   "label": "intra",
+   "text": "Wagonjwa wenye shinikizo la juu la damu wanapaswa kupima blood pressure kila asubuhi na kuandika matokeo kabla ya kwenda kliniki.",
+   "explanation": "One Swahili sentence with the English phrase blood pressure embedded in its grammar. The switch is inside the sentence, so it is intra."
+  }
+ ]
+}

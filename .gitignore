@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+.pytest_cache/
+# Raw and scored row-level files contain model responses to harmful requests: keep local, never commit.
+data/*.jsonl
+results/raw/
+results/scored/
+results/pilot/
+results/dry_run/
+# Aggregate CSV and JSON files, run_manifest.json, and SUMMARY.md ARE committed.
+.DS_Store
+# Rendered text, judge outputs, annotation sheets and archives contain harmful prompts: local only.
+data/*
+!data/.gitkeep
+# Benign hand-written judge examples for the bilingual reviewers (no harmful text) are shared on purpose.
+!data/review/
+data/review/*
+!data/review/judge_examples_review.csv
+logs/
