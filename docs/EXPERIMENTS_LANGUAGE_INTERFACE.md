@@ -23,7 +23,17 @@ Design:
 
 Limits to state: open-weight models only; synthetic renderings; English-derived directions may be the wrong reference for other varieties; one layer choice; health-domain prompts unless a second source is added.
 
-Not yet built: activation extraction from the models (hooks on residual stream, batching, caching). The arithmetic is in `src/dlsd/mechanism.py` with tests in `tests/test_mechanism.py`. Extraction script is the next piece to write and must be tested on a small model before any large run.
+Built and tested (offline, on a tiny random Llama with a stub tokenizer, plus synthetic arrays; no real model has been run):
+- `src/dlsd/mechanism.py`: directions, projection, retention, controls, ablation, held-out layer choice, per-condition summary (`tests/test_mechanism.py`).
+- `src/dlsd/activations.py` and `scripts/10_extract_activations.py`: last-token residual activations at the post-instruction position, one shard per model and condition, resumable. Test checks that a prompt gets the same activation alone or in a batch.
+- `scripts/11_directions.py`: picks the layer on the English baseline only (held-out split), fits the direction on half A, then summarises every condition (retention, AUROC on the English direction, cosine to English and to a random control). Writes `results/aggregate/e1_directions_<model>.csv/json`.
+Not built: the causal check (ablate and steer during generation), the non-safety control direction, and the harmfulness-versus-refusal split (needs refusal labels from the existing generations).
+
+### Data for E1: what is reused and what is new
+- Reused as is: the rendered prompts (`data/rendered.jsonl`, 600 items by 27 conditions with quality-gate statuses) and the model list. These are NOT in this repository (gitignored, they contain harmful requests). They must be copied from the author's local or cluster copy of the earlier study, or regenerated with `scripts/02*` (needs the Qwen3-32B renderer, NLLB translator and judge panel: expensive, and renderings would differ).
+- Reused for behavioral context only: aggregate refusal and compliance by condition and model (`results/aggregate/`). They are per-condition averages, so they cannot supply per-item projections.
+- New runs required: activations. Nothing in the earlier results contains hidden states, so E1 needs forward passes of the open-weight models over the same rendered prompts (cheap compared with generation: one pass per prompt, no decoding).
+- Open item (decision for the author): the benign contrast. MedSafetyBench (harmful) and MMedBench (benign) differ in format (open request versus multiple choice with an answer instruction), so harmful-versus-benign is confounded with format. Options: a matched benign rewrite of the harmful requests, or a benign set in the same request format. Until decided, results from `LABEL_BY_SOURCE` must be labelled as confounded.
 
 ## E2. Behavioral register pilot (cheap, run first)
 Hold intent and harm level fixed; vary register only. Reuse the existing generation and scoring pipeline. Add a benign-helpfulness arm (utility gap): answer quality and false refusals by register, not only harmful compliance. Source prompts beyond health (for example a general harmful-request set plus matched benign) so the claim is not domain-bound; choose and record the source before running.

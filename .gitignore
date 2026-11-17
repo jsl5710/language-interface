@@ -19,3 +19,4 @@ data/*
 data/review/*
 !data/review/judge_examples_review.csv
 logs/
+results/activations/
