@@ -111,3 +111,15 @@ uncertainty:
   selective_coverage: 0.8
   overconfident_threshold: 0.8   # fix before running
   pattern_tolerance: 0.02        # section 6.4: a change in accuracy or mean confidence smaller than 2 points counts as 'holds' (fixed before any result)
+
+e1_stage_map:                  # E1 stages 2 to 8 (docs/EXPERIMENTS_LANGUAGE_INTERFACE.md). Every value here is PROVISIONAL until the author confirms it.
+  embedding_norm_percentile: 90       # provisional: a token counts as high-norm above this percentile of English (baseline|SAE) content-token norms
+  early_layer_max_fraction: 0.25      # provisional: layers at or below this share of depth are "early" for stage 3
+  semantic_layer_fraction: 0.5        # provisional: stage 5 uses the extracted layer nearest this share of depth
+  probe_folds: 5                      # provisional: item-grouped cross-validation folds for the language/variety probe
+  probe_C: 1.0                        # provisional: inverse L2 strength of the logistic probe (features standardized)
+  probe_max_iter: 2000                # provisional
+  refused_labels: [refuse]            # provisional: judge labels counted as a refusal; "partial" counts as not refused
+  min_per_class: 10                   # provisional: fewest English refused and complied harmful prompts needed to fit the refusal direction
+  comprehension_min: 40.0             # provisional: restatement score (chrF++ of back-translation) at or above which an item counts as understood
+  n_boot: 1000                        # provisional: bootstrap resamples over items for intervals

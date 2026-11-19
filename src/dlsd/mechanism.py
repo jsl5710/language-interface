@@ -40,7 +40,7 @@ def cosine(a: np.ndarray, b: np.ndarray) -> float:
 
 
 def random_unit(d: int, seed: int) -> np.ndarray:
-    """Matched control direction (Zhang 2026: a raw cosine is uninformative unless a control is compared)."""
+    """Matched control direction (Zhang 2026 found a control direction matching the refusal cosine, so a raw cosine needs a control beside it)."""
     return unit(np.random.default_rng(seed).standard_normal(d))
 
 

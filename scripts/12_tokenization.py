@@ -6,7 +6,6 @@ Writes results/aggregate/e1_tokenization_<slug>.csv/json (condition means of the
 (raw and adjusted gaps in projection, see dlsd.tokenization.adjusted_gaps). Descriptive only. Row text is never written.
 """
 import argparse
-import glob
 import json
 import os
 import re
@@ -16,7 +15,7 @@ import pandas as pd
 
 from dlsd import mechanism as M
 from dlsd import tokenization as T
-from dlsd.activations import labelled_rows
+from dlsd.activations import labelled_rows, load_shards
 from dlsd.io import write_table
 
 BASE = "baseline|SAE"
@@ -38,7 +37,7 @@ if __name__ == "__main__":
     meas = ["n_tokens", "fertility", "premium", "byte_fallback_share", "split3_share"]
     write_table(tab.groupby("condition_id")[meas].mean().reset_index(), f"e1_tokenization_{slug(a.model)}", {"experiment": "E1", "model": a.model})
     if a.act_dir:
-        shards = {str(np.load(f)["condition_id"]): np.load(f) for f in sorted(glob.glob(os.path.join(a.act_dir, "*.npz")))}
+        shards = load_shards(a.act_dir)
         layer = int(json.load(open(f"results/aggregate/e1_directions_{os.path.basename(a.act_dir.rstrip('/'))}.json"))["layer"])
         eng = shards[BASE]
         lab = eng["labels"].astype(bool)

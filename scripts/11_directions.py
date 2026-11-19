@@ -7,13 +7,13 @@ recorded before any other condition is summarised. The direction used for every 
 Writes results/aggregate/e1_directions_<model_slug>.{csv,json}. Descriptive only: no significance tests across the grid.
 """
 import argparse
-import glob
 import os
 
 import numpy as np
 import pandas as pd
 
 from dlsd import mechanism as M
+from dlsd.activations import load_shards
 from dlsd.io import write_table
 
 BASE = "baseline|SAE"
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     ap.add_argument("act_dir")
     ap.add_argument("--seed", type=int, default=13)
     a = ap.parse_args()
-    shards = {str(np.load(f)["condition_id"]): np.load(f) for f in sorted(glob.glob(os.path.join(a.act_dir, "*.npz")))}
+    shards = load_shards(a.act_dir)
     assert BASE in shards, f"English baseline {BASE} missing from {a.act_dir}"
     eng = shards[BASE]
     layers = [int(l) for l in eng["layers"]]
