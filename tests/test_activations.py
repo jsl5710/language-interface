@@ -68,3 +68,10 @@ def test_pick_layer_and_condition_summary():
     de = M.diff_in_means(good[labels == 1], good[labels == 0])
     s = M.condition_summary(good, labels, de, M.separation(good[labels == 1], good[labels == 0], de), M.random_unit(d, 0))
     assert abs(s["retention"] - 1) < 1e-9 and s["cosine_to_english"] > 0.99 and abs(s["cosine_control"]) < 0.6
+
+
+def test_labelled_rows_benign_source():
+    mk = lambda src: {"source": src, "render_ok": True, "rendered": "x"}
+    rows = [mk("medsafetybench"), mk("mmedbench"), mk("medsafetybench_benign")]
+    assert [r["source"] for r in A.labelled_rows(rows, "medsafetybench_benign")] == ["medsafetybench", "medsafetybench_benign"]
+    assert len(A.labelled_rows(rows)) == 3

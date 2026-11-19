@@ -27,11 +27,13 @@ if __name__ == "__main__":
     ap.add_argument("--limit-items", type=int)
     ap.add_argument("--batch-size", type=int, default=8)
     ap.add_argument("--rendered", default="data/rendered.jsonl")
+    ap.add_argument("--benign-source", default="medsafetybench_benign", choices=["medsafetybench_benign", "mmedbench"],
+                    help="benign side of the contrast; mmedbench is multiple choice, so harmful-versus-benign is confounded with format")
     a = ap.parse_args()
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
     layers = [int(x) for x in a.layers.split(",")]
-    rows = labelled_rows([json.loads(l) for l in open(a.rendered) if l.strip()])
+    rows = labelled_rows([json.loads(l) for l in open(a.rendered) if l.strip()], a.benign_source)
     if a.limit_items:
         keep = sorted({r["item_id"] for r in rows})[: a.limit_items]
         rows = [r for r in rows if r["item_id"] in set(keep)]
@@ -48,6 +50,6 @@ if __name__ == "__main__":
             continue
         texts = [chat_text(tok, build_prompt(r)) for r in rs]
         acts = last_token_hidden(model, tok, texts, layers, a.batch_size)
-        np.savez(path, item_ids=np.array([r["item_id"] for r in rs]), labels=np.array([LABEL_BY_SOURCE[r["source"]] for r in rs]),
+        np.savez(path, item_ids=np.array([r["item_id"] for r in rs]), labels=np.array([LABEL_BY_SOURCE[r["source"]] for r in rs]), benign_source=a.benign_source,
                  layers=np.array(layers), condition_id=cid, model=a.model, **{f"L{l}": acts[l] for l in layers})
         print(cid, len(rs))

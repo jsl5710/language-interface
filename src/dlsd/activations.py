@@ -8,7 +8,7 @@ import numpy as np
 
 # Which rows are harmful and which are benign for the direction. MedSafetyBench requests are harmful. MMedBench items are benign
 # health questions, but they are multiple choice, so harmful-versus-benign is confounded with prompt format: see the spec (open item).
-LABEL_BY_SOURCE = {"medsafetybench": 1, "mmedbench": 0}
+LABEL_BY_SOURCE = {"medsafetybench": 1, "mmedbench": 0, "medsafetybench_benign": 0}   # the matched rewrite (scripts/01b) removes the format confound
 
 
 def chat_text(tokenizer, user_text: str) -> str:
@@ -36,6 +36,8 @@ def last_token_hidden(model, tokenizer, texts: list, layers: list, batch_size: i
     return {l: np.concatenate(v, axis=0) for l, v in out.items()}
 
 
-def labelled_rows(rows: list) -> list:
-    """Rows usable for E1: rendered ok, from a labelled source."""
-    return [r for r in rows if r.get("render_ok") and r.get("rendered") is not None and r["source"] in LABEL_BY_SOURCE]
+def labelled_rows(rows: list, benign_source: str | None = None) -> list:
+    """Rows usable for E1: rendered ok, from a labelled source. With `benign_source`, keep only harmful rows and that benign source
+    ("medsafetybench_benign" = matched rewrite, "mmedbench" = the format-confounded contrast)."""
+    ok = {"medsafetybench"} | ({benign_source} if benign_source else set(LABEL_BY_SOURCE))
+    return [r for r in rows if r.get("render_ok") and r.get("rendered") is not None and r["source"] in ok and r["source"] in LABEL_BY_SOURCE]
