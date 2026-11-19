@@ -31,8 +31,9 @@ def main():
     ap.add_argument("--spotcheck", action="store_true")
     ap.add_argument("--emit-items", action="store_true")
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--items", default="data/items.jsonl", help="items file; point at the server copy, do not copy it into the repository")
     args = ap.parse_args()
-    items = [json.loads(l) for l in open("data/items.jsonl")]
+    items = [json.loads(l) for l in open(args.items)]
     harmful = [it for it in items if it["source"] == "medsafetybench"]
     done = load_done()
     if args.spotcheck:

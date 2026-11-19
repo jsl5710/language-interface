@@ -53,3 +53,7 @@ Simulate who is counted in preference data by variety, then measure drift of a m
 - Ask the author before changing models, languages, dialects, thresholds or sample sizes.
 - No em dashes in any text written for the author or the paper.
 - Keep the repository private while the paper and the earlier study are under double-blind review.
+
+
+### Handoff: where the data lives (2026-11-19)
+`data/rendered.jsonl` is too large for GitHub and holds harmful text, so it stays on the server. Claude Code is pointed at the server folder and finds the files there (items, rendered prompts, renderer and model endpoints). Do not copy them into this repository or commit them. Order of work: (1) locate `items.jsonl` and `rendered.jsonl` and report paths, row counts, condition ids and the share with `render_ok` false per condition; (2) `scripts/01b_benign_match.py --items <path> --dry-run`, read the output, then confirm the model and thresholds with the author before the full run; (3) spot-check, `--emit-items`, render the benign items under the same conditions with the same gates; (4) `scripts/10_extract_activations.py --rendered <path>`; (5) `scripts/11_directions.py` and `scripts/12_tokenization.py`. Outputs under `results/aggregate/` are aggregates and may be committed; row-level files may not.
